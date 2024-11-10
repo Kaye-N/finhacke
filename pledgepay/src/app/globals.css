@@ -51,8 +51,25 @@ h3 {
 focus {
   z-index: 1;
   position: relative;
-  top: -50px;
+  top: -100px;
 }
+
+dues {
+  z-index: 1;
+  position: relative;
+  top: -150px;
+}
+
+remburs {
+  z-index: 1;
+  position: relative;
+  top: -200px;
+}
+
+above {
+  z-index: 1;
+}
+
 
 img[src*="wave1.svg"], img[src*="wave2.svg"] {
   width: 100%;
@@ -91,6 +108,9 @@ img[src*="logo.png"]{
   right: 10px;
   top: 10px;
 }
+
+
+
 
 /* Zoom on Hover */
 /* img[src*="wave1.svg"]:hover {

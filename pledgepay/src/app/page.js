@@ -12,7 +12,7 @@ export default function Home() {
 
       {/* Header with buttons positioned in the top-right corner */}
       <header className="flex justify-between items-center p-4 relative">
-        <img src="/logo.png" alt="PledgePay Logo" className="w-16 h-16" />
+        
         <div className="absolute top-7 right-40 space-x-5">
           {/* Members Button */}
           <Link href="/members">
@@ -52,6 +52,7 @@ export default function Home() {
           <img src="/wave3.svg" alt="Wave" />
           <img src="/wave1.svg" alt="Wave" />
           <img src="/lines-lul.svg" alt="Lines" />
+          <img src="/logo.png" alt="PledgePay Logo" className="w-16 h-16" />
         </div>
     </div>
   );

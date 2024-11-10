@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
+
 export default function Members() {
   return (
     <div className="min-h-screen bg-blue-50 flex flex-col items-center justify-center p-6">
@@ -11,7 +12,7 @@ export default function Members() {
       </Head>
 
       {/* Header with logo and navigation buttons */}
-      <header className="flex justify-between items-center p-4 relative w-full max-w-screen-xl">
+      <header className="flex justify-between items-center p-4  w-full max-w-screen-xl">
         <img src="/logo.png" alt="PledgePay Logo" className="w-16 h-16" />
       </header>
 
@@ -29,20 +30,20 @@ export default function Members() {
             link="/pay-dues"  // Adjust the link if needed
           />
           <OptionCard
-            title="Donate"
-            description="Want to help us fundraise?"
+            title="Reimbursement"
+            description="Click to send an reimbursement request."
             buttonText="Click here"
-            link="/donate"  // Adjust the link if needed
+            link="/reimbursement"  // Adjust the link if needed
           />
           <OptionCard
             title="History"
-            description="Click below to see your payment history."
+            description="Click below to see payment history."
             buttonText="Click here"
             link="/history"  // This will route to the History page
           />
           <OptionCard
             title="Pending"
-            description="Look at any pending amounts below."
+            description="Pending Payments will from AKPsi members are displayed here"
             buttonText="Click here"
             link="/pending"  // Adjust the link if needed
           />
@@ -68,16 +69,17 @@ export default function Members() {
 
 // OptionCard component
 const OptionCard = ({ title, description, buttonText, link }) => (
-    <div className="bg-white border border-blue-300 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
-      <h2 className="text-lg font-bold text-blue-700">{title}</h2>
-      <p className="text-sm text-blue-600 mt-2 mb-4">{description}</p>
-      {/* Center the button */}
-      <div className="flex justify-center">
-        <Link href={link}>
-          <button className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
-            {buttonText}
-          </button>
-        </Link>
-      </div>
+  <div className="bg-white border border-blue-300 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between h-64">
+    <h2 className="text-lg font-bold text-blue-700">{title}</h2>
+    <p className="text-sm text-blue-600 mt-2 mb-4">{description}</p>
+    {/* Center the button */}
+    <div className="flex justify-center mt-auto">
+      <Link href={link}>
+        <button className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
+          {buttonText}
+        </button>
+      </Link>
     </div>
-  );
+  </div>
+);
+

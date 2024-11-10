@@ -7,8 +7,8 @@ const HistoryPage = () => {
     
     <div className="min-h-screen bg-blue-50 flex flex-col items-center justify-center p-6">
       <Head>     
-        <title>Payment History | PledgePay</title>
-        <meta name="description" content="PledgePay Payment History" />
+        <title>Pending Payments | PledgePay</title>
+        <meta name="description" content="PledgePay Pending Amounts" />
         <link rel="icon" href="/logo.ico" />
       </Head>
 
@@ -21,31 +21,15 @@ const HistoryPage = () => {
       {/* Main Content */}
       <main className="flex flex-col items-center justify-start w-full flex-1 text-center mt-8">
         <h1 className="text-3xl font-semibold text-blue-800 mb-6">
-          Payment History
+          Pending Payments
         </h1>
 
         <div className="w-full max-w-4xl p-6 bg-white rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold text-blue-700 mb-6">
-            Select a Semester to View Your Payment History
+            Pending Payments are displayed Here
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* History Links */}
-            <HistoryLink
-              title="Fall 2024"
-              link="/fall2024"
-            />
-            <HistoryLink
-              title="Spring 2024"
-              link="/spring2024"
-            />
-            <HistoryLink
-              title="Fall 2023"
-              link="/fall2023"
-            />
-            <HistoryLink
-              title="Spring 2023"
-              link="/spring2023"
-            />
+            
           </div>
 
           {/* Back Button */}
