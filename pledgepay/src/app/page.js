@@ -38,13 +38,21 @@ export default function Home() {
               <input
                 className="border p-4 w-[450px] rounded-full focus:outline-none focus:placeholder-transparent"
                 type="text" 
-                placeholder="Enter your User Pin to get started"
+                placeholder="Enter your NETID"
+              />
+            </div>
+            <div>
+              <input
+                className="border p-4 w-[450px] rounded-full focus:outline-none focus:placeholder-transparent"
+                type="text" 
+                placeholder="Password"
               />
             </div>
           </form>
         </h2>
-        <h3>Don't have a user pin? Contact an Officer</h3>
-        <img src="/logo.png" alt="PledgePay Logo" />
+        <h3>
+  Don't have a user pin? <a href="mailto:officer@example.com" className="text-blue-600 underline">Contact an Officer</a>
+</h3>        <img src="/logo.png" alt="PledgePay Logo" />
       </main>
 
         <div>
