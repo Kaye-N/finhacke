@@ -3,19 +3,54 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #e7edf8;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-align: center;
+}
+
+img[src*="wave1.svg"], img[src*="wave2.svg"] {
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  
+}
+
+img[src*="wave3.svg"]  {
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  
+  mix-blend-mode: multiply;
+}
+
+/* Zoom on Hover */
+/* img[src*="wave1.svg"]:hover {
+  transform: scale(1.1); 
+} */
