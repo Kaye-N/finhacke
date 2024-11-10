@@ -15,8 +15,7 @@ export default function Members() {
         <img src="/logo.png" alt="PledgePay Logo" className="w-16 h-16" />
       </header>
 
-      {/* Main Content */}
-      <main className="flex flex-col items-center justify-center w-full flex-1 text-center mt-8">
+      <main className="flex flex-col items-center justify-start w-full flex-1 text-center mt-8">
         <h1 className="text-3xl font-semibold text-blue-800 mb-6">
           Welcome, {'<member>'}! Please choose an option below to get started
         </h1>
@@ -24,26 +23,31 @@ export default function Members() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 w-full max-w-4xl">
           <OptionCard
             title="Pay Dues"
-            description="This semester, dues are $50. Please click below to pay through PayPal."
+            description="This semester, dues are $50. "
             buttonText="Click here"
+            link="/pay-dues"  // Adjust the link if needed
           />
           <OptionCard
             title="Donate"
-            description="Want to help us fundraise? Drop some $$ below!"
+            description="Want to help us fundraise?"
             buttonText="Click here"
+            link="/donate"  // Adjust the link if needed
           />
           <OptionCard
             title="History"
             description="Click below to see your payment history."
             buttonText="Click here"
+            link="/history"  // This will route to the History page
           />
           <OptionCard
             title="Pending"
             description="Look at any pending amounts below."
             buttonText="Click here"
+            link="/pending"  // Adjust the link if needed
           />
         </div>
       </main>
+
 
       {/* Footer with Waves */}
       <footer className="w-full mt-12 bg-blue-100 py-6">
@@ -61,12 +65,17 @@ export default function Members() {
 }
 
 // OptionCard component
-const OptionCard = ({ title, description, buttonText }) => (
-  <div className="bg-blue-100 border border-blue-300 rounded-lg p-6 text-center shadow-md">
-    <h2 className="text-lg font-bold text-blue-700">{title}</h2>
-    <p className="text-sm text-blue-600 mt-2 mb-4">{description}</p>
-    <button className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
-      {buttonText}
-    </button>
-  </div>
-);
+const OptionCard = ({ title, description, buttonText, link }) => (
+    <div className="bg-white border border-blue-300 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+      <h2 className="text-lg font-bold text-blue-700">{title}</h2>
+      <p className="text-sm text-blue-600 mt-2 mb-4">{description}</p>
+      {/* Center the button */}
+      <div className="flex justify-center">
+        <Link href={link}>
+          <button className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
+            {buttonText}
+          </button>
+        </Link>
+      </div>
+    </div>
+  );
