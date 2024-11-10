@@ -15,6 +15,7 @@ export default function Members() {
         <img src="/logo.png" alt="PledgePay Logo" className="w-16 h-16" />
       </header>
 
+      <focus>
       <main className="flex flex-col items-center justify-start w-full flex-1 text-center mt-8">
         <h1 className="text-3xl font-semibold text-blue-800 mb-6">
           Welcome, {'<member>'}! Please choose an option below to get started
@@ -47,10 +48,11 @@ export default function Members() {
           />
         </div>
       </main>
+      </focus>
 
 
       {/* Footer with Waves */}
-      <footer className="w-full mt-12 bg-blue-100 py-6">
+      <footer className="w-full mt-12 py-6">
         <div className="flex justify-center space-x-4">
           <img src="/wave2.svg" alt="Wave" className="w-16" />
           <img src="/wave3.svg" alt="Wave" className="w-16" />

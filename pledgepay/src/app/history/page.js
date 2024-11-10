@@ -4,8 +4,9 @@ import Head from "next/head";
 
 const HistoryPage = () => {
   return (
+    
     <div className="min-h-screen bg-blue-50 flex flex-col items-center justify-center p-6">
-      <Head>
+      <Head>     
         <title>Payment History | PledgePay</title>
         <meta name="description" content="PledgePay Payment History" />
         <link rel="icon" href="/logo.ico" />
@@ -16,6 +17,7 @@ const HistoryPage = () => {
         <img src="/logo.png" alt="PledgePay Logo" className="w-16 h-16" />
       </header>
 
+      <focus>
       {/* Main Content */}
       <main className="flex flex-col items-center justify-start w-full flex-1 text-center mt-8">
         <h1 className="text-3xl font-semibold text-blue-800 mb-6">
@@ -56,9 +58,10 @@ const HistoryPage = () => {
           </div>
         </div>
       </main>
+      </focus>
 
       {/* Footer with Waves */}
-      <footer className="w-full mt-12 bg-blue-100 py-6">
+      <footer className="w-full mt-12 py-6">
         <div className="flex justify-center space-x-4">
           <img src="/wave2.svg" alt="Wave" className="w-16" />
           <img src="/wave3.svg" alt="Wave" className="w-16" />
@@ -69,6 +72,7 @@ const HistoryPage = () => {
         </div>
       </footer>
     </div>
+    
   );
 };
 

@@ -47,14 +47,12 @@ export default function Home() {
         <img src="/logo.png" alt="PledgePay Logo" />
       </main>
 
-      <footer>
         <div>
           <img src="/wave2.svg" alt="Wave" />
           <img src="/wave3.svg" alt="Wave" />
           <img src="/wave1.svg" alt="Wave" />
           <img src="/lines-lul.svg" alt="Lines" />
         </div>
-      </footer>
     </div>
   );
 }
