@@ -3,19 +3,121 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #e7edf8;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* Welcome to PledgePay */
+h1 {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Vertically centers (optional) */
+  padding-top: 200px; /* Adjust this value to shift downwards */
+  font-size: 3rem;
+  text-align: center;
+  color: #004AAD;
+}
+
+/* Input Box */
+h2 {
+  justify-content: center; /* Centers horizontally */
+}
+
+/* Don't have a user pin? Ask an officer */
+h3 {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Vertically centers (optional) */
+  padding-top: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #004AAD;
+}
+
+focus {
+  z-index: 1;
+  position: relative;
+  top: -100px;
+}
+
+dues {
+  z-index: 1;
+  position: relative;
+  top: -150px;
+}
+
+remburs {
+  z-index: 1;
+  position: relative;
+  top: -200px;
+}
+
+above {
+  z-index: 1;
+}
+
+
+img[src*="wave1.svg"], img[src*="wave2.svg"] {
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  
+}
+
+img[src*="wave3.svg"]  {
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  
+  mix-blend-mode: multiply;
+}
+
+img[src*="lines-lul.svg"] {
+  width: 20%;
+  height: auto;
+
+  position: absolute;
+  left: -30px;
+  top: -50px;
+}
+
+img[src*="logo.png"]{
+  width: 5%;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+
+
+
+/* Zoom on Hover */
+/* img[src*="wave1.svg"]:hover {
+  transform: scale(1.1); 
+} */
+
+/* styles/globals.css */
+input::placeholder {
+  text-align: center; /* Center the placeholder text */
 }

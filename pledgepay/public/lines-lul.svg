@@ -1,0 +1,19 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 299" width="220" height="299">
+	<title>lines lul</title>
+	<style>
+		.s0 { fill: #00758c } 
+	</style>
+	<g id="Layer 1">
+		<path id="Shape 3" fill-rule="evenodd" class="s0" d="m22 156l59 61c0 0 4.6 9.6-6 8l-53-54"/>
+		<path id="Shape 2" fill-rule="evenodd" class="s0" d="m22 207v-16l26 28c0 0 4.6 9.5-6 8"/>
+		<path id="Shape 1" fill-rule="evenodd" class="s0" d="m22 243v-15l30 32c0 0 4.1 10.4-7.1 7.1"/>
+		<path id="Shape 4" fill-rule="evenodd" class="s0" d="m22 127v-15l65 68c0 0 5.4 10.2-6 8z"/>
+		<path id="Shape 5" fill-rule="evenodd" class="s0" d="m22 91v-15l95 99c0 0 5.5 11.3-7 8z"/>
+		<path id="Shape 6" fill-rule="evenodd" class="s0" d="m22 57v-15l69 71c0 0 3.5 9.4-7 8z"/>
+		<path id="Shape 7" fill-rule="evenodd" class="s0" d="m23 22l111 116c0 0 11.2 4.3 7-8l-112-115-7-6z"/>
+		<path id="Shape 8" fill-rule="evenodd" class="s0" d="m50 14l29 30c0 0 7.9 3.9 7-5l-23-26z"/>
+		<path id="Shape 9" fill-rule="evenodd" class="s0" d="m82 14l53 55c0 0 10.9 6 7-7l-46-49z"/>
+		<path id="Shape 10" fill-rule="evenodd" class="s0" d="m118 14l65 68c0 0 9.8 5.8 7-7l-58-62z"/>
+		<path id="Shape 11" fill-rule="evenodd" class="s0" d="m162 14l26 26c0 0 9.7 4.6 6-7l-18-19z"/>
+	</g>
+</svg>
