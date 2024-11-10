@@ -7,46 +7,33 @@ const HistoryPage = () => {
     
     <div className="min-h-screen bg-blue-50 flex flex-col items-center justify-center p-6">
       <Head>     
-        <title>Payment History | PledgePay</title>
-        <meta name="description" content="PledgePay Payment History" />
+        <title>Reimbursement | PledgePay</title>
+        <meta name="description" content="PledgePay Pending Dyes" />
         <link rel="icon" href="/logo.ico" />
       </Head>
 
       {/* Header with logo */}
-      <header className="flex justify-between items-center p-4 w-full max-w-screen-xl">
-        <img src="/logo.png" alt="PledgePay Logo" className="w-16 h-16" />
+      <header className="flex justify-between items-center p-4 relative w-full max-w-screen-xl">
       </header>
 
-      <focus>
+      <remburs>
+
       {/* Main Content */}
       <main className="flex flex-col items-center justify-start w-full flex-1 text-center mt-8">
         <h1 className="text-3xl font-semibold text-blue-800 mb-6">
-          Payment History
+          Reimbursement
         </h1>
 
         <div className="w-full max-w-4xl p-6 bg-white rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold text-blue-700 mb-6">
-            Select a Semester to View Your Payment History
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* History Links */}
-            <HistoryLink
-              title="Fall 2024"
-              link="/fall2024"
-            />
-            <HistoryLink
-              title="Spring 2024"
-              link="/spring2024"
-            />
-            <HistoryLink
-              title="Fall 2023"
-              link="/fall2023"
-            />
-            <HistoryLink
-              title="Spring 2023"
-              link="/spring2023"
-            />
-          </div>
+        <p className="text-2xl font-bold text-blue-700 text-center mt-4">
+        Send in a picture of your receipt below,<br />and a form will be submitted automatically
+      </p> <br />
+
+      
+      <button className="w-60 h-60">
+        <img src="/cloud-upload-button.svg" alt="Upload File" className="w-60 h-60" />
+      </button>
+
 
           {/* Back Button */}
           <div className="flex justify-center mt-8">
@@ -58,7 +45,9 @@ const HistoryPage = () => {
           </div>
         </div>
       </main>
-      </focus>
+
+      </remburs>
+      
 
       {/* Footer with Waves */}
       <footer className="w-full mt-12 py-6">
@@ -71,7 +60,11 @@ const HistoryPage = () => {
           <img src="/lines-lul.svg" alt="Lines" className="w-32" />
         </div>
       </footer>
+
+      <img src="/logo.png" alt="PledgePay Logo" className="w-16 h-16" />
     </div>
+    
+
     
   );
 };

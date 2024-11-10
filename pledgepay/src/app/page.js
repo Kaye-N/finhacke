@@ -43,7 +43,7 @@ export default function Home() {
             </div>
           </form>
         </h2>
-        <h3>Don't have a user pin? <a href="mailto:officer@example.com">Contact an Officer</a></h3>
+        <h3>Don't have a user pin? Contact an Officer</h3>
         <img src="/logo.png" alt="PledgePay Logo" />
       </main>
 
