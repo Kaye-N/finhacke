@@ -48,7 +48,7 @@ const HistoryPage = () => {
 
           {/* Back Button */}
           <div className="flex justify-center mt-8">
-            <Link href="/">
+            <Link href="/members">
               <button className="px-6 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700">
                 Back
               </button>
